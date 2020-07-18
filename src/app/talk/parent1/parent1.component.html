@@ -1,0 +1,11 @@
+<p>parent1 works!</p>
+
+<!-- step 2 pass to binding variable in child component -->
+<app-child1
+[fromPatent1]="parent1Message"
+(triggerEmit)="gotMsg($event)"
+></app-child1>
+
+<br>
+
+<p> Parent1: This is emit from child1: {{ parent1ReceiveMessage }} </p>

@@ -1,0 +1,13 @@
+<p>child1 works!</p>
+
+<!-- step4: show up in child1 component -->
+
+<h2>1. Parent -> child via @Input</h2>
+child1: {{ fromPatent1 }}
+
+<br>
+<br>
+<h2>2. Child -> Parent via @Output and EventEmitter</h2>
+<!-- emit to parent1,
+  step1: button to trigger it -->
+<button (click)="triggerEmit()">emitToParent2</button>
